@@ -1,0 +1,1 @@
+ -n 4 -localonly -localhost MSI -envall -mapall "C:\Program Files\Altair\2019\feko\bin\feko_mkl.csv.impi.exe" "anten_start" "--run-from-gui"
