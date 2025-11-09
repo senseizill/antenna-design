@@ -39,11 +39,11 @@ Phần này định nghĩa các nguồn kích thích (nguồn cấp tín hiệu)
 - Phân tích kết quả (Post-processing): hiển thị bức xạ, S11, Gain trong POSTFEKO.
 
 ## 5. Kết quả mô phỏng 
-### Thông số	        Giá trị     	Ghi chú
+### Thông số	        Giá trị     	    Ghi chú
 #### Tần số hoạt động	2GHz - 2.8Ghz	    Băng tần được sử dụng
 #### Độ lợi (Gain)	    5 dB	            Bức xạ định hướng tốt
 #### S11 (Return Loss)	–12.5 dB	        Hiệu quả phản xạ thấp
-VSWR	4.8	Khớp trở kháng tốt
+VSWR	4.8	
 ### Loại anten	Yagi-Uda 
 
 ## 6. Kết luận
@@ -55,7 +55,7 @@ VSWR	4.8	Khớp trở kháng tốt
 ## 7. Thành viên thực hiện
 
 Nhóm 7 – Dự án mô phỏng anten
-Thành viên: 
+* Thành viên: 
 ### - Lê Quốc Thành ( trưởng nhóm )
 ### - Trần Thành Đạt 
 
