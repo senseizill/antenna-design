@@ -1,23 +1,45 @@
 ## 1. Giới thiệu
 
 - Dự án này nhằm thiết kế, mô phỏng và phân tích đặc tính bức xạ của anten bằng phần mềm Altair FEKO 2019.2.
-- Mục tiêu là tạo ra mô hình anten hoạt động ổn định trong dải tần xác định, có độ lợi cao, hệ số phản xạ thấp, và bức xạ định hướng phù hợp cho các ứng dụng truyền thông không dây.
+- Mục tiêu là tạo ra mô hình anten hoạt động ổn định trong dải tần 2Ghz - 2.8Ghz, có độ lợi cao, hệ số phản xạ thấp, và bức xạ định hướng phù hợp cho các ứng dụng truyền thông không dây.
 
 ## 2. Công cụ và phần mềm
 
-- Phần mềm sử dụng: Altair FEKO 2019.2 (CADFEKO, POSTFEKO)
+- Phần mềm sử dụng: Altair FEKO 2019.2
 - Công nghệ mô phỏng: Phương pháp MoM (Method of Moments)
 - Hệ đơn vị: milimet (mm)
-- Loại mô hình: 3D electromagnetic simulation
 
 ## 3. Cấu trúc mô hình anten
 
-- Boom: phần trụ chính giữ các phần tử anten.
-- D: phần tử dẫn điện (radiating elements).
-- Nhua1, nhua2, nhua3: lớp vật liệu cách điện hỗ trợ cơ học.
-- Union1: kết cấu tổng hợp của toàn anten sau khi hợp nhất.
-- Port: nguồn cấp tín hiệu (feed) được gắn tại vị trí thích hợp.
+Chắc chắn rồi. Dưới đây là một đoạn mô tả chi tiết về cấu trúc mô hình của bạn (dựa trên hình ảnh và các mô tả trước đó của bạn) được viết bằng Markdown.
 
+Bạn có thể sao chép (copy) và dán (paste) trực tiếp vào tệp `README.md` trên GitHub của mình.
+
+-----
+
+```markdown
+##  4. Mô tả Cấu trúc Mô hình Anten
+
+Đây là chi tiết về các thành phần được sử dụng trong dự án mô phỏng anten này.
+
+### + Hình học (Geometry)
+
+Cây hình học bao gồm tất cả các đối tượng 3D vật lý của mô hình:
+
+* **`boom`**: Phần trụ chính (boom) của anten, đóng vai trò là khung đỡ cơ học cho tất cả các phần tử khác.
+* **`D`**: Phần tử bức xạ chính (radiating element) của anten.
+* **`nhua1`, `nhua2`, `nhua3`**: Ba chi tiết bằng nhựa (hoặc vật liệu cách điện), được sử dụng để cố định các phần tử vào boom và cách điện chúng.
+* **`R`**: Một phần tử khác của anten (có thể là phần tử phản xạ - reflector).
+* **`Union1`**: Một cấu trúc tổng hợp được tạo bằng cách hợp nhất (union) các đối tượng con. Nó bao gồm:
+    * **`DE1`**, **`DE2`**: Các thành phần con, có thể là hai phần của chấn tử (driven element).
+    * **`Line1`**: Một đoạn dây (wire) được sử dụng trong cấu trúc cấp nguồn.
+
+### + Cổng (Ports)
+
+Phần này định nghĩa các nguồn kích thích (nguồn cấp tín hiệu) cho mô hình:
+
+* **`Port1`**: Điểm cấp nguồn (feed point) duy nhất cho anten. Đây là nơi tín hiệu RF được đưa vào để anten bức xạ.
+```
 
 ## 4. Quy trình mô phỏng
 
