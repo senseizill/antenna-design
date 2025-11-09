@@ -11,34 +11,23 @@
 
 ## 3. Cấu trúc mô hình anten
 
-Chắc chắn rồi. Dưới đây là một đoạn mô tả chi tiết về cấu trúc mô hình của bạn (dựa trên hình ảnh và các mô tả trước đó của bạn) được viết bằng Markdown.
-
-Bạn có thể sao chép (copy) và dán (paste) trực tiếp vào tệp `README.md` trên GitHub của mình.
-
------
-
-```markdown
-##  4. Mô tả Cấu trúc Mô hình Anten
-
-Đây là chi tiết về các thành phần được sử dụng trong dự án mô phỏng anten này.
-
 ### + Hình học (Geometry)
 
 Cây hình học bao gồm tất cả các đối tượng 3D vật lý của mô hình:
 
-* **`boom`**: Phần trụ chính (boom) của anten, đóng vai trò là khung đỡ cơ học cho tất cả các phần tử khác.
-* **`D`**: Phần tử bức xạ chính (radiating element) của anten.
-* **`nhua1`, `nhua2`, `nhua3`**: Ba chi tiết bằng nhựa (hoặc vật liệu cách điện), được sử dụng để cố định các phần tử vào boom và cách điện chúng.
-* **`R`**: Một phần tử khác của anten (có thể là phần tử phản xạ - reflector).
-* **`Union1`**: Một cấu trúc tổng hợp được tạo bằng cách hợp nhất (union) các đối tượng con. Nó bao gồm:
-    * **`DE1`**, **`DE2`**: Các thành phần con, có thể là hai phần của chấn tử (driven element).
-    * **`Line1`**: Một đoạn dây (wire) được sử dụng trong cấu trúc cấp nguồn.
+* `boom`: Phần trụ chính (boom) của anten, đóng vai trò là khung đỡ cơ học cho tất cả các phần tử khác.
+* `D`: Phần tử bức xạ chính (radiating element) của anten.
+* `nhua1`, `nhua2`, `nhua3`**: Ba chi tiết bằng nhựa (hoặc vật liệu cách điện), được sử dụng để cố định các phần tử vào boom và cách điện chúng.
+* `R`: Một phần tử khác của anten (có thể là phần tử phản xạ - reflector).
+* `Union1`: Một cấu trúc tổng hợp được tạo bằng cách hợp nhất (union) các đối tượng con. Nó bao gồm:
+    * `DE1`, `DE2`: Các thành phần con, có thể là hai phần của chấn tử (driven element).
+    * `Line1`: Một đoạn dây (wire) được sử dụng trong cấu trúc cấp nguồn.
 
 ### + Cổng (Ports)
 
 Phần này định nghĩa các nguồn kích thích (nguồn cấp tín hiệu) cho mô hình:
 
-* **`Port1`**: Điểm cấp nguồn (feed point) duy nhất cho anten. Đây là nơi tín hiệu RF được đưa vào để anten bức xạ.
+* `Port1`: Điểm cấp nguồn (feed point) duy nhất cho anten. Đây là nơi tín hiệu RF được đưa vào để anten bức xạ.
 ```
 
 ## 4. Quy trình mô phỏng
