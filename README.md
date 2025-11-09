@@ -18,17 +18,15 @@ Cây hình học bao gồm tất cả các đối tượng 3D vật lý của m�
 * `boom`: Phần trụ chính (boom) của anten, đóng vai trò là khung đỡ cơ học cho tất cả các phần tử khác.
 * `D`: Phần tử bức xạ chính (radiating element) của anten.
 * `nhua1`, `nhua2`, `nhua3`**: Ba chi tiết bằng nhựa (hoặc vật liệu cách điện), được sử dụng để cố định các phần tử vào boom và cách điện chúng.
-* `R`: Một phần tử khác của anten (có thể là phần tử phản xạ - reflector).
+* `R`: Một phần tử khác của anten phần tử phản xạ - reflector.
 * `Union1`: Một cấu trúc tổng hợp được tạo bằng cách hợp nhất (union) các đối tượng con. Nó bao gồm:
-    * `DE1`, `DE2`: Các thành phần con, có thể là hai phần của chấn tử (driven element).
+    * `DE1`, `DE2`: Các thành phần con, hai phần của chấn tử (driven element).
     * `Line1`: Một đoạn dây (wire) được sử dụng trong cấu trúc cấp nguồn.
 
 ### + Cổng (Ports)
 
 Phần này định nghĩa các nguồn kích thích (nguồn cấp tín hiệu) cho mô hình:
-
 * `Port1`: Điểm cấp nguồn (feed point) duy nhất cho anten. Đây là nơi tín hiệu RF được đưa vào để anten bức xạ.
-```
 
 ## 4. Quy trình mô phỏng
 
@@ -41,11 +39,11 @@ Phần này định nghĩa các nguồn kích thích (nguồn cấp tín hiệu)
 - Phân tích kết quả (Post-processing): hiển thị bức xạ, S11, Gain trong POSTFEKO.
 
 ## 5. Kết quả mô phỏng 
-### Thông số	        Giá trị  	Ghi chú
-Tần số hoạt động	2.4 GHz	    Băng tần WiFi/IoT
-Độ lợi (Gain)	    7.8 dB	    Bức xạ định hướng tốt
-S11 (Return Loss)	–18 dB	    Hiệu quả phản xạ thấp
-VSWR	1.3	Khớp trở kháng tốt
+### Thông số	        Giá trị     	Ghi chú
+#### Tần số hoạt động	2GHz - 2.8Ghz	    Băng tần được sử dụng
+#### Độ lợi (Gain)	    5 dB	            Bức xạ định hướng tốt
+#### S11 (Return Loss)	–12.5 dB	        Hiệu quả phản xạ thấp
+VSWR	4.8	Khớp trở kháng tốt
 ### Loại anten	Yagi-Uda 
 
 ## 6. Kết luận
